@@ -1,0 +1,134 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+body{
+    display:flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color:white;
+}
+.calc{
+    height:550px;
+    width:430px;
+    background-color: black ;
+    display:flex;
+    flex-direction: row;
+    flex-direction: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+button{
+    height:80px;
+    width:80px;
+    margin:10px;
+    border:none;
+    border-radius: 4px;
+    font-size: 2rem;
+    background-color: #434A54;
+    color:#FFFFFF;
+    text-align:center;
+    line-height: 80px;
+}
+.cl{
+    background-color: #0a9396;
+    
+}
+.numbers{
+    height: 500px;
+    width:315px;
+}
+.plus{
+    height:180px;
+    width:80px;
+    background-color: #0a9396;
+    line-height: 180px;
+    font-size: 3rem;
+}
+.operations{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+}
+.screen{
+    height:200px;
+    width:430px;
+    background-color:  #434A54;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+   
+}
+button:hover{
+    /* background-color: #0a9396; */
+    opacity: 0.5;
+}
+.sol{
+    
+    height: 100px;
+    width:430px;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    gap:30px;
+    align-items: center;
+}
+.res{
+    height:50px;
+    width:400px;
+    display:flex;
+    justify-content: flex-end;
+    
+    text-align: right;
+    align-items: center;
+    overflow:hidden;
+    margin-right: 30px;
+    padding-right: 10px;
+    font-size: 3rem;
+    white-space: nowrap;
+   
+    
+}
+.eqs{
+    font-size: 4rem;
+    height:80px;
+    width:50px;
+    color:#0a9396;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 80px;
+    
+}
+.dis{
+    font-size: 4.7rem;
+    height:80px;
+    width:300px;
+    text-align: end;
+    overflow-x:scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.dis::-webkit-scrollbar {
+    display:none;
+    width: 8px; /* Width of the scrollbar */
+}
+@media (max-width:600px){
+.calc{
+    width:100%;
+    height:70%;
+}
+.screen{
+    width:100%;
+    height:30%;
+
+}
+button{
+    height:10%;
+    width:30%;
+}
+}
